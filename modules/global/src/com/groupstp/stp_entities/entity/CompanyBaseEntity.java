@@ -1,6 +1,7 @@
 package com.groupstp.stp_entities.entity;
 
 import com.haulmont.cuba.core.entity.BaseUuidEntity;
+import org.hibernate.validator.constraints.Email;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -52,6 +53,19 @@ public class CompanyBaseEntity extends BaseUuidEntity {
 
     @Column(name = "EXT_ID")
     protected String extId;
+
+    @Email
+    @Column(name = "EMAIL")
+    protected String email;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public CompanyBaseEntity setEmail(String email) {
+        this.email = email;
+        return this;
+    }
 
     public void setExtId(String extId) {
         this.extId = extId;
