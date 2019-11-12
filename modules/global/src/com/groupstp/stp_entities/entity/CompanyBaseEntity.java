@@ -62,9 +62,8 @@ public class CompanyBaseEntity extends BaseUuidEntity {
         return email;
     }
 
-    public CompanyBaseEntity setEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
-        return this;
     }
 
     public void setExtId(String extId) {
