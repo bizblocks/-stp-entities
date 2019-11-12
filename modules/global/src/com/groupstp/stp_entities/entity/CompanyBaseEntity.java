@@ -1,6 +1,7 @@
 package com.groupstp.stp_entities.entity;
 
 import com.haulmont.cuba.core.entity.BaseUuidEntity;
+import com.haulmont.cuba.core.entity.StandardEntity;
 import org.hibernate.validator.constraints.Email;
 
 import javax.persistence.Column;
@@ -13,7 +14,7 @@ import javax.validation.constraints.NotNull;
         @UniqueConstraint(name = "IDX_SUPPLY_COMPANY_UNQ", columnNames = {"EXT_ID"})
 })
 @Entity(name = "stp$Company")
-public class CompanyBaseEntity extends BaseUuidEntity {
+public class CompanyBaseEntity extends StandardEntity {
     private static final long serialVersionUID = -703335224563189337L;
 
     @NotNull

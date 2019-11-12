@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
         @UniqueConstraint(name = "IDX_STP_CLAUSE_UNQ", columnNames = {"EXT_ID"})
 })
 @Entity(name = "stp$Clause")
-public class ClauseBaseEntity extends BaseUuidEntity {
+public class ClauseBaseEntity extends StandardEntity {
     private static final long serialVersionUID = -5642341102420647383L;
 
     @NotNull

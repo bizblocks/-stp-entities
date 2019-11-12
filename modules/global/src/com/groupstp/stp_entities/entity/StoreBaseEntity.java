@@ -1,6 +1,7 @@
 package com.groupstp.stp_entities.entity;
 
 import com.haulmont.cuba.core.entity.BaseUuidEntity;
+import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.cuba.core.entity.annotation.Lookup;
 import com.haulmont.cuba.core.entity.annotation.LookupType;
 
@@ -11,7 +12,7 @@ import javax.validation.constraints.NotNull;
         @UniqueConstraint(name = "IDX_STP_STORE_UNQ", columnNames = {"EXT_ID"})
 })
 @Entity(name = "stp$Store")
-public class StoreBaseEntity extends BaseUuidEntity {
+public class StoreBaseEntity extends StandardEntity {
     private static final long serialVersionUID = -6710957140611836179L;
 
     @NotNull
