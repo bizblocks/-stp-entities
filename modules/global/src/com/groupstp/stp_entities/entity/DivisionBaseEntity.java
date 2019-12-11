@@ -22,7 +22,7 @@ public class DivisionBaseEntity extends StandardEntity {
     protected CompanyBaseEntity company;
 
     @NotNull
-    @Column(name = "NAME", nullable = false, length = 50)
+    @Column(name = "NAME", nullable = false, length = 60)
     protected String name;
 
     @Column(name = "EXT_ID")
