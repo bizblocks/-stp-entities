@@ -24,9 +24,6 @@ public class CompanyBaseEntity extends StandardEntity {
     @Column(name = "POST_CODE")
     protected String postCode;
 
-    @Column(name = "CEO_NAME")
-    protected String ceoName;
-
     @Column(name = "ACCOUNTANT_NAME")
     protected String accountantName;
 
