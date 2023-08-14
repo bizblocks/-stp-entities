@@ -4,11 +4,10 @@ buildscript {
     repositories {
         mavenLocal()
         maven {
-            url 'https://dl.bintray.com/cuba-platform/main'
+            url 'https://repo.cuba-platform.com/content/groups/work'
             
         }
         mavenCentral()
-        jcenter()
         maven {
             url 'http://maven.vaadin.com/vaadin-addons'
         }
